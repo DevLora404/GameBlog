@@ -7,61 +7,76 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
-<nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#devlog">Devlog</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#about">About the Game</a></li>
-    </ul>
-  </nav>
-  
-  
 <body>
-  <header>
-    <h1>Devlog</h1>
-    <p>SUPER AMAZING INDIE GAME CREATED ONLY BY ME HELL YEAH</p>
-  </header>
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#devlog">Devlog</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#about">About the Game</a></li>
+  </ul>
+</nav>
 
-  <main>
-    <article>
-      <h2>Day 1 – Introduction</h2>
-      <p>Lora here!<p>
-       <p> I am officially creating a video game from scratch on my own!
-      </p>
-      <p>Alas, i do have a problem... I HAVE NO IDEA ABOUT GAME DEVELOPMENT </p>
-      <p>No Blender, no Unity, no nothing. So please join me on this beautiful project — all comments, recommendations, and suggestions are welcome and appreciated, either in the Thoughts section or on my<a href="https://x.com/woo_art46167"> Twitter</a>
-      <p>Stay tuned</p>
-    </article>
+<header>
+  <h1>Devlog</h1>
+  <p>SUPER AMAZING INDIE GAME CREATED ONLY BY ME HELL YEAH</p>
+</header>
 
-    <article>
-      <h2>Day 2 – Learning Blender</h2>
-      <p>Today I studied Blender, I still can't do anything important, but I have enough plants to keep me entertained with Blender. 
-      </p>
-      <p>
-        As you you know, this is totally a free project. I have no money even for myself, so all assets will be created by me (interior and exterior).
-      </p>
-      <p> Tomorrow I’ll publish my first Blender item. It won’t be anything big or impressive—maybe even disappointing to some—but think of it as a starting point for future before-and-after comparisons!</p>
-    </article>
-  </main>
+<main>
+  <article>
+    <h2>Day 1 – Introduction</h2>
+    <p>Lora here!</p>
+    <p>I am officially creating a video game from scratch on my own!</p>
+    <p>Alas, I do have a problem... I HAVE NO IDEA ABOUT GAME DEVELOPMENT</p>
+    <p>No Blender, no Unity, no nothing...</p>
+  </article>
+
+  <article>
+    <h2>Day 2 – Learning Blender</h2>
+    <p>The idea is to create everything on my own, but with the schedule I have, that seems almost impossible, PLEASE forgive me if I use any google assets.
+  Obviously I will put the link so you can see the work of the original author! </p>
+  </article>
+
+  <article>
+    <h2>Week 1 - Slowed down</h2>
+    <p>The blog has been updated and fixed! Your comments will now be public!</p>
+    <p>I created some minor things, the interior and exterior of the RV still need to be detailed (SUPER IMPORTANT) </p>
+    <p>Being that I am early to university, I am dividing my time between the game and getting regular on math, please be patient! </p>
+    <p>If anyone wants to help me with some models, please let me know !!! </p>
+  </article>
+</main>
 
 <section id="comments">
   <h2>Share Your Thoughts</h2>
-  <form>
+  <form id="comment-form">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Anonymous">
 
     <label for="comment">Comment</label>
-    <textarea id="comment" name="comment" rows="5" placeholder="Leave your feedback..."></textarea>
+    <textarea id="comment" name="comment" rows="5" placeholder="Leave your feedback..." required></textarea>
+
+    <label for="image">Upload Image</label>
+    <input type="file" id="image" name="image" accept="image/*">
 
     <button type="submit">Submit</button>
   </form>
+
+  <div id="comments-list"></div>
 </section>
 
-  
-  
-  <footer>
-    <p>ATT Lora</p>
-  </footer>
+<footer>
+  <p>ATT Lora</p>
+</footer>
+
+<footer>
+  <p>ATT Lora</p>
+</footer>
+
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+<!-- Solo este script -->
+<script src="comments.js"></script>
 </body>
 </html>
